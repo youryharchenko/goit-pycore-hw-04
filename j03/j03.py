@@ -21,7 +21,7 @@ def walk(pref: str, curr_path: pathlib.Path, result: str) -> str:
     return result
 
 
-def dir_tree(path) -> str:
+def dir_tree(path: str) -> str:
     # Отримаємо об'єкт абсолютного шляху
     root_path = pathlib.Path(path).resolve()
     # Шлях має існувати і це має бути директорія
